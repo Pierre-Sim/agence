@@ -30,5 +30,6 @@ Password : verysecurepassword
 
 Pour utiliser le site il suffit de remplir les champs et de cocher les options, juste pour les disponibilités il faut choisir une date avec le calendrier et écrire l'heure ensuite puis valider avec le bouton en dessous.
 Et ensuite valider le tout avec le bouton envoyer.
+
 Voilà à quoi ressemble le résultat chez moi
 ![image](https://github.com/user-attachments/assets/7977e67e-1a9e-4a02-9b3c-1009b34cc94e)
