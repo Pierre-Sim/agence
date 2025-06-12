@@ -1,9 +1,10 @@
 :root {
   background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url("salon.png");
   background-size: cover;
-  background-position: 50% 0;
+  background-position: center;
+  background-repeat: no-repeat;
   width: 100%;
-  height: 100vh;
+
 }
 
 body {

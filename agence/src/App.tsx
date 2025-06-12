@@ -129,28 +129,33 @@ function App() {
                 <div className="right-column">
                     <h2>VOTRE MESSAGE</h2>
                     <div>
-                        <label>
-                            <input {...register("Motif", { required: "Champ requis" })} type="radio" value="Visite" />
-                            Demande de visite
-                        </label>
-                        <label>
-                            <input {...register("Motif", { required: "Champ requis" })} type="radio" value="Rappel" />
-                            Être rappelé.e
-                        </label>
-                        <label>
-                            <input {...register("Motif", { required: "Champ requis" })} type="radio" value="Photos" />
-                            Plus de photos
-                        </label>
+                        <div className="radio-group">
+                            <label>
+                                <input {...register("Motif", {required: "Champ requis"})} type="radio" value="Visite"/>
+                                Demande de visite
+                            </label>
+                            <label>
+                                <input {...register("Motif", {required: "Champ requis"})} type="radio" value="Rappel"/>
+                                Être rappelé.e
+                            </label>
+                            <label>
+                                <input {...register("Motif", {required: "Champ requis"})} type="radio" value="Photos"/>
+                                Plus de photos
+                            </label>
+                        </div>
                         {errors.Motif && <p className="error">{errors.Motif.message}</p>}
 
-                        <textarea {...register("Votre message", {
+                        <textarea placeholder="Écrivez votre message ici..." {...register("Votre message", {
                             required: "Le message est requis",
-                            maxLength: { value: 400, message: "400 caractères max" }
+                            maxLength: {value: 400, message: "400 caractères max"}
                         })} />
                         {errors["Votre message"] && <p className="error">{errors["Votre message"].message}</p>}
                     </div>
 
-                    <input type="submit" value="Envoyer" />
+                    <div className="submit-container">
+                        <input type="submit" value="Envoyer"/>
+                    </div>
+
                 </div>
             </form>
         </>
